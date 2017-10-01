@@ -23,8 +23,11 @@ img {
 }
 
 /* Personal.html */
-#personal {
-  float-bottom;
+#stuck {
+  position: fixed;
+  margin-top: -300px;
+
+
 }
 
 /* List links CSS */
