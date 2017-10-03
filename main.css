@@ -88,7 +88,7 @@ p {
   margin: 0;
   position: fixed;
   background-color: #18253a;
-  box-shadow: 2px 5px 5px black;
+  box-shadow: 0px 5px 10px 2px black;
 }
 
 .bodytext {
