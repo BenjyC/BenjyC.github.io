@@ -23,7 +23,7 @@ img {
 }
 
 /* Personal.html */
-#stuck {
+#fixed {
   position: fixed;
   margin-top: -300px;
 
@@ -73,14 +73,31 @@ p {
   position: relative;
 }
 
+/* Personal.html CSS*/
+
+#personal {
+
+
+}
+
 /* Navbar CSS */
 
+a#navlinks:visited {
+  color: #c0ea35;
+}
+
+a#navlinks:hover {
+  color: #51d813;
+}
+
+
 #navlinks {
+  color: #c0ea35;
   text-decoration: none;
   font-size: 35px;
   font-family: "Advent Pro", sans-serif;
-
 }
+
 
 #navbar {
   width: 100%;
