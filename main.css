@@ -1,134 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+body, html {
+  height: 100%;
+}
 
-/* Main Body CSS */
-
+/* Background */
 body {
-  /*font-family: "Trebuchet MS", Helvetica, sans-serif ;*/
-  font-family: 'Anonymous Pro', monospace;
-  margin: 0;
-  z-index: 0;
+  background-image: url("background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1 {
+/* Main elements */
+.row {
+  background-color: red;
   text-align: center;
-  letter-spacing: 4px;
-  font-size: 60px;
-}
-
-/* Background Image */
-img {
-  position: absolute;
-  width: 100%;
-  margin-bottom: 0;
-}
-
-/* Personal.html */
-#fixed {
-  position: fixed;
-  margin-top: -300px;
-
-
-}
-
-/* List links CSS */
-
-li {
-  float:left;
-  padding-left: 10%;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-}
-
-p {
-  font-size: 15px;
-  position: fixed;
-}
-
-
-/* Main lander CSS */
-
-#mainsauce {
-  border: solid;
-  border-color: black;
-  border-radius: 10px;
-  width: 25%;
-  height: 20%;
-  margin: auto;
-  position: fixed;
-  top: 0; left: 0; bottom: 0; right: 30%;
-  padding: 0;
-
-}
-
-#mainsaucetext {
-  font-size: 30px;
-  font-style: italic;
-  text-align: center;
-  letter-spacing: 3px;
-  position: relative;
-}
-
-/* Personal.html CSS*/
-
-#personal {
-
-
-}
-
-/* Navbar CSS */
-
-a#navlinks:visited {
-  color: #c0ea35;
-}
-
-a#navlinks:hover {
-  color: #51d813;
-}
-
-
-#navlinks {
-  color: #c0ea35;
-  text-decoration: none;
-  font-size: 35px;
-  font-family: "Advent Pro", sans-serif;
-}
-
-
-#navbar {
-  width: 100%;
-  height: 5%;
-  margin: 0;
-  position: fixed;
-  background-color: #18253a;
-  box-shadow: 0px 5px 10px 2px black;
-}
-
-.bodytext {
-  padding-top: 90%;
-  border-top: 2px solid;
-}
-
-
-/* Footer */
-
-footer {
-  border-top: 1px solid;
-  width: 100%;
-  bottom:0;
-  position:fixed;
-  background-color: #18253a;
-  height: 40px;
-  z-index: 1;
-  padding-left: 2%;
-  margin-bottom: 0;
-}
-
-#footertext {
-  padding-left: 95%;
-
 }
