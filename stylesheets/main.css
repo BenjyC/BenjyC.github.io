@@ -1,0 +1,41 @@
+body, html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Background */
+body {
+  background-image: url("../images/background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main elements */
+.container {
+  display: flex;           /* establish flex container */
+  flex-direction: column;
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 100%;
+}
+.row {
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  align-items: center;        /* for single line flex container */
+  justify-content: center; /* center items vertically, in this case */
+}
+
+.jumbotron {
+    -moz-box-shadow: 0px 10px 10px grey;
+    -webkit-box-shadow: 0px 10px 10px grey;
+    box-shadow: 0px 10px 10px grey;
+    background: linear-gradient(#b2b2b2, #6f6f6f);
+
+}
+
+.jumboText {
+  font-size: 50px;
+  color: white;
+}
