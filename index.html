@@ -6,44 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="stylesheets/animate.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css">
+  <!-- Materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="stylesheets/animate.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
 </head>
   <body>
+
     <header>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
         <div class="container">
-          <a class="navbar-brand wow fadeIn" href="#"> Home </a>
+          <a class="navbar-brand nav-link fadeIn animated" href="#"> Home </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link wow fadeIn waves-effect waves-light" href="#"> Personal <span class="sr-only">(current)</span></a>
+                <a class="nav-link fadeIn waves-effect waves-light animated" href="#"> Personal <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link wow fadeIn waves-effect waves-light" href="#"> Projects </a>
+                <a class="nav-link fadeIn waves-effect waves-light animated" href="#"> Projects </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
+      <!-- Main lander area centre of screen -->
       <div class="view">
         <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
           <!-- Content -->
           <div class="container">
             <!-- Grid row -->
-            <div class="row">
+            <div class="row" id="landerDiv">
               <!-- Grid column -->
               <div class="col-md-12 mb-4 text-center">
-                <h1 class="h1-responsive text-uppercase font-weight-bold wow fadeInDown" data-wow-delay="0.3s"><strong> Ben Coleman</strong></h1>
-                <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-                <h5 class="h5-responsive text-uppercase mb-4 wow fadeInDown" data-wow-delay="0.4s"><strong>Computing Portfolio</strong></h5>
+                <h1 class="landerText text-uppercase mb-0  font-weight-bold wow fadeInDown" data-wow-delay="0.3s"><strong> Ben Coleman </strong></h1>
+                <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.6s">
+                <h5 class="landerText text-uppercase mb-4 wow fadeInDown" data-wow-delay="0.4s"><strong> Engineer & Developer </strong></h5>
               </div>
             </div>
           </div>
@@ -51,27 +56,59 @@
       </div>
     </header>
 
+    <!-- Main content below landing area -->
     <main>
       <div class="container">
         <div class="row py-5">
           <div class="col-md-12 text-center">
             <p class="mainText"> I'm currently in my final year of <i>Computer Applications</i> in Dublin City University. </p>
-            <p class="mainText"> This website acts as a place for me to showcase what I do and what I'm interestd in. </p>
+            <p class="mainText"> This website acts as a place for me to showcase what I do and what I'm interested in. </p>
           </div>
 
           <div class="col-md-12 text-left">
-              <h1> Personal </h1> 
+              <h1 class="sectionHeaders wow fadeIn", data-wow-delay="0.3s"> Personal </h1> 
+              <h5 class="font-weight-bold wow fadeIn", data-wow-delay="0.3s"> Skills </h5>
+              <p class="mainText"> Over the duration of my course I have become familiar with several programming languages, frameworks and concepts. Some of which are: </p>
+              <ul class="langList">
+                <i>
+                <li> Python </li>
+                <li> Java </li>
+                <li> JavaScript </li>
+                <li> Docker </li>
+                <li> Node.js/ExpressJS </li>
+                <li> HTML/CSS/Bootstrap </li>
+                </i>
+              </ul>
+              <br>
+
+              <h5 class="font-weight-bold wow fadeIn", data-wow-delay="0.3s"> Experience </h5>
+              <br>
+              <p class="mainText" style="font-weight: bold"> April - September, 2018 </p>
+              <p style="padding-left: 10px;font-size: 18px;"> Participated in an internship as a Software Engineer Intern with <a href="https://www.axway.com/en"> Axway. </a></p>
           </div>
 
           <div class="col-md-12 text-left">
-              <h1> Projects </h1> 
+              <h1 class="sectionHeaders wow fadeIn", data-wow-delay="0.3s"> Projects </h1> 
+              <p class="mainText"> I've been a part of many different projects over the last few years, whether it be personal, educational or corporate level. Some such projects can 
+                be seen on my <a href="https://github.com/BenjyC"> GitHub </a>, while others have been on DCU's internal GitLab instance or part of a company. </p>
+              <ul class="langList" style="list-style-type:disc;list-style-position: inside;">
+                <i>
+                  <li> A <strong> Docker-based Node.js </strong> application built on ExpressJS used for correcting programming scripts. This was my final year project and was focused on containerising
+                    and recreating an existing application in order to improve its extensibility and remove any dependencies it may have so that it could be used anywhere in the future. 
+                  </li>
+                  <br>
+                  <li> ChordScraper primitive application to pull guitar chord/lyric sheets from a given URL using Pythong and BeautifulSoup </li>
+                  <br>
+                  <li> Internal framework during internship that involved Java, Spring web framework, JUnit, TestNG, and Docker.</li>
+                </i>
+              </ul>
           </div>
         </div>
       </div>
     </main>
 
-    <script src="wow.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
