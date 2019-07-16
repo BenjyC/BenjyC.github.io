@@ -18,7 +18,7 @@ html {
   }
 }
 
-.view .mask {
+.view .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,47 +29,18 @@ html {
 }
 
 .view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url('../images/background.jpeg'); 
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center center;
 }
 
-
-/* NAVBAR CONTENT */
-.navnbar-nav {
-  list-style: none;
-}
-
-.nav-link {
-  padding: 0;
-}
-
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
-.top-nav-collapse {
-  background-color: #575859 !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #575859 !important;
-  }
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+.overlay {
+  background-color: black;
+  opacity: 0.7;
 }
 
 /* Lander */ 
@@ -104,4 +75,22 @@ h5 {
 .langList {
   font-size: 20px;
   padding-left: 30px;
+}
+
+.fa-linkedin-square, .fa-github-square {
+  color: white;
+  font-size: 50px;
+  justify-content: space-evenly;
+}
+
+.fa-linkedin-square {
+  padding-right: 20px;
+}
+
+.fa-github-square {
+  padding-left: 20px;
+}
+
+a:hover {
+  color: rgba(194, 194, 194, 0.959);
 }

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="stylesheets/animate.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
@@ -18,17 +18,18 @@
       
       <!-- Main lander area centre of screen -->
       <div class="view">
-        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-          <!-- Content -->
-          <div class="container">
-            <!-- Grid row -->
-            <div class="row" id="landerDiv">
-              <!-- Grid column -->
-              <div class="col-md-12 mb-4 text-center">
-                <h1 class="landerText text-uppercase mb-0  font-weight-bold wow fadeInDown" data-wow-delay="0.3s"><strong> Ben Coleman </strong></h1>
-                <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.6s">
-                <h5 class="landerText text-uppercase mb-4 wow fadeInDown" data-wow-delay="0.4s"><strong> Engineer & Developer </strong></h5>
-              </div>
+        <div class="overlay"></div>
+        <!-- Content -->
+        <div class="container">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-12 mb-4 text-center landerDiv">
+              <h1 class="landerText text-uppercase mb-0  font-weight-bold wow fadeInDown" data-wow-delay="0.3s"><strong> Ben Coleman </strong></h1>
+              <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.6s">
+              <h5 class="landerText text-uppercase mb-4 wow fadeInDown" data-wow-delay="0.4s"><strong> Engineer & Developer </strong></h5>
+              <a href="https://www.linkedin.com/in/ben-coleman-266930186" class="fa fa-linkedin-square wow fadeInUp" target="_blank" aria-hidden="true"></a>
+              <a href="https://github.com/BenjyC" class="fa fa-github-square wow fadeInUp" target="_blank" aria-hidden="true"></a>
             </div>
           </div>
         </div>
@@ -40,7 +41,8 @@
       <div class="container">
         <div class="row py-5">
           <div class="col-md-12 text-center">
-            <p class="mainText"> I'm currently in my final year of <i>Computer Applications</i> in Dublin City University. </p>
+            <p class="mainText"> My name is Ben. </p>
+            <p class="mainText"> I recently completed a degree in <i>Computer Applications</i> at Dublin City University. </p>
             <p class="mainText"> This website acts as a place for me to showcase what I do and what I'm interested in. </p>
           </div>
 
@@ -70,8 +72,8 @@
                 <div class="col-md-4">
                   <p style="font-size: 20px;"> Responsibilites involved: </p>
                   <li> Daily Java development on a large-scale framework. </li>
-                  <li> Part of a Scrum based team (sprint planning/daily meetings/reviews). </li>
-                  <li> Developing high standard code conforming the established design patterns. </li>
+                  <li> Part of a Scrum based team (Sprint planning/daily meetings/reviews). </li>
+                  <li> Developing high standard code conforming to well-established design patterns. </li>
                 </div>
                 <div class="col-md-4 offset-md-2">
                   <p style="font-size: 20px;"> Technologies involved: </p>
@@ -95,7 +97,7 @@
                     and recreating an existing application in order to improve its extensibility and remove any dependencies it may have so that it could be used anywhere in the future. 
                   </li>
                   <br>
-                  <li> ChordScraper primitive application to pull guitar chord/lyric sheets from a given URL using Pythong and BeautifulSoup </li>
+                  <li> ChordScraper primitive application to pull guitar chord/lyric sheets from a given URL using Python and BeautifulSoup </li>
                   <br>
                   <li> Duo project in my 3rd year that involved GMail inbox scraping and regex pattern matching for delivery email information. This was then displayed in a formatted table
                     on a node.js web application where someone could find their consolidated delivery details.
